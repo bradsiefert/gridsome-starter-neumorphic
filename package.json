@@ -1,0 +1,21 @@
+{
+  "name": "gridsome-neumorphic",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/plugin-sitemap": "^0.3.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.5.0",
+    "bootstrap": "^5.0.0-alpha1",
+    "gridsome": "^0.7.19",
+    "gridsome-source-static-meta": "^1.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}

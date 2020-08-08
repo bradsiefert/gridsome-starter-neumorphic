@@ -1,0 +1,351 @@
+// Importin'
+@import "variables.scss";
+@import "~bootstrap";
+// @import "darkmode.scss";
+
+// All this is to make the footer sticky to the bottom.
+html, body, #app { height: 100%; }
+#app { display: flex; flex-direction: column; }
+main { flex: 1 0 auto; }
+footer { flex-shrink: 0; }
+
+body {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-family: 'Inter';
+  font-weight: 500;
+  color: $black;
+  line-height: 1.4;
+  letter-spacing: -0.1px;
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding-top: 6rem;
+  }
+}
+
+a:active {
+  position: relative;
+  top: 2px;
+}
+
+// Responsive Text
+@include media-breakpoint-up(xs) {
+  html {
+    font-size: 1.15rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+// Layout
+@media (max-width: 1599px) {
+  .wide-contain {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .slim-contain {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .slim-contain,
+  .wide-contain {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .skinny-contain {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .skinny-contain,
+  .slim-contain,
+  .wide-contain {
+    max-width: 672px;
+  }
+}
+
+// Typography
+.lead {
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.lead p {
+  margin-bottom: 1.5rem;
+}
+
+.display-1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: -0.1px;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.display-2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.display-3 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.display-4 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #121212;
+  letter-spacing: -0.3px;
+  margin-bottom: 1rem;
+}
+
+h1, .h1 {
+  font-family: "Merriweather";
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+}
+
+h2, .h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: -0.1px;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+h3, .h3 {
+  font-family: "Merriweather";
+  font-weight: 800;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+h4, .h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.125rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h5, .h5 {
+  font-weight: 700;
+  color: $primary;
+  font-size: .875rem;
+  font-size: 12px;
+  color: #00BEFF;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  line-height: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+h6, .h6 {
+  font-weight: 700;
+  font-size: .75rem;
+  letter-spacing: -0.1px;
+  line-height: 1.125rem;
+  margin-bottom: .25rem;
+}
+
+blockquote {
+  margin: 1rem 0 1.5rem;
+  background-color: $gray-100;
+  padding: 1.5rem 2rem .5rem !important;
+  font-style: italic;
+  font-family: "Merriweather";
+}
+
+blockquote {
+  p {
+    margin-bottom: 1rem !important;
+  }
+
+  p:last-of-type {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: .875rem;
+  }
+}
+
+pre {
+  font-size: 72%;
+  color: $link-color;
+  background-color: $gray-100;
+  padding: 1rem;
+}
+
+.hero hr {
+  margin: 4rem auto 2rem;
+}
+
+/* ---------- Buttons --------- */
+.btn {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  padding: 0.66rem 2rem;
+  letter-spacing: 0.2px;
+  font-family: "Merriweather";
+  font-weight: 900;
+  border-radius: 96px;
+}
+
+@media (max-width: 512px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+.btn-xs {
+  font-size: .6875rem;
+  font-weight: 700;
+  padding: 4px 1rem 3px;
+}
+
+.btn-sm {
+  font-size: .8125rem;
+  line-height: .8125rem;
+  font-weight: 700;
+  padding: 9px 1.5rem 8px;
+}
+
+.btn-lg {
+  font-size: 1rem;
+  padding: 16px 2rem;
+}
+
+// Breadcrumbs
+.breadcrumb {
+  background: transparent;
+  color: $gray-600;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.2px;
+  border-radius: 0;
+  border-top: 1px solid $gray-200;
+  border-bottom: 1px solid $gray-200;
+  padding: 10px 1rem 10px 0;
+  margin-bottom: 3rem;
+}
+
+.divider {
+  border-bottom: 1px solid $gray-200;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+// Blog
+.box {
+  border: 1px solid $gray-200;
+  padding: 2rem;
+  font-size: 0.9375rem;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.box a:not(.btn) {
+  color: $gray-900;
+}
+
+@media (max-width: 767px) {
+  .box {
+    padding: 1.5rem;
+  }
+}
+
+.blog-details {
+  font-size: 0.8125rem;
+}
+
+.blog-post {
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.blog-post {
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    margin-top: 2rem;
+  }
+
+  h2 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  img {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  figure {
+    margin-bottom: 2rem;
+  }
+
+  figcaption {
+    font-size: .9125rem;
+    color: #777;
+    text-align: center;
+  }
+}
+
+/* ---------- Contact Page --------- */
+.form-control,
+.form-control:focus {
+  font-size: .875rem;
+  height: 48px;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+}
+
+textarea.form-control {
+  min-height: 256px;
+}

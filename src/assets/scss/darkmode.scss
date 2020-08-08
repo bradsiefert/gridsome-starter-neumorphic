@@ -1,0 +1,79 @@
+/* ---------- Dark Mode Styles --------- */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $white  !important;
+    background-color: #121212 !important;
+  }
+
+  .navbar-brand a,
+  .navbar .navbar-nav .nav-link {
+    color: $white !important;
+  }
+  
+  .navbar-brand a:hover,
+  .navbar .navbar-nav .nav-link:hover {
+    color: $primary !important;
+  }
+
+  hr {
+    color: $gray-800 !important;
+  }
+
+  footer {
+    border-top-color: $gray-800 !important;
+  }
+
+  .footer-nav a,
+  .footer-social a {
+    color: $white !important;
+  }
+
+  .navbar {
+    background-image: radial-gradient(50% 0%, #2C2C2C 0%, #181818 100%) !important;
+    box-shadow: 0 0 32px 0 rgba(0,0,0,0.64) !important;
+    border-radius: 0 12px 12px 0 !important;
+    border: none !important;
+  }
+
+  .breadcrumb {
+    border-top: 1px solid $gray-800 !important;
+    border-bottom: 1px solid $gray-800 !important;
+  }
+  
+  .box {
+    border: 1px solid $gray-800 !important;
+  }
+
+  .box a {
+    color: $white !important;
+  }
+
+  .box, .form-control {
+    border: 1px solid $gray-800;
+  }
+
+  .form-control,
+  .form-control:focus,
+  .form-control::placeholder {
+    color: $white;
+  }
+
+  .divider {
+    border-bottom: 1px solid $gray-800 !important;
+  }
+
+
+  blockquote, pre {
+    background-color: $black !important;
+  }
+
+  .box a:not(.btn) {
+    color: $white;
+  }
+  
+  .btn-outline-dark {
+    color: $white !important;
+    border: 1px solid $white !important;
+  }
+}
