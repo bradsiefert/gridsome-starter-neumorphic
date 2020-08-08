@@ -4,7 +4,7 @@
 
 ## Preview Image
 
-![Gridsome Neumorphic Starter preview screenshot](https://imgur.com/Z9j2w7U)
+![Gridsome Neumorphic Starter preview screenshot](https://i.imgur.com/t0xyHhj.png)
 
 ## Install
 ### 1. Install Gridsome CLI tool if you don't have
