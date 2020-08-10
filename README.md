@@ -20,7 +20,7 @@
 ### 3. Starter Features
 - Uses `Bootstrap v5.0.0alpha1`. I wanted to test out v5, and I didn't have any issues in using it. You should likely update to later versions as they become available. 
 - Uses SCSS
-- Uses the `@gridsome/plugin-sitemap` to import data into the site
+- Uses the `@gridsome/plugin-filesystem` to import data into the site
 - Users the `@gridsome/plugin-sitemap` to create a sitemap on build
 - My markdown files use the same front-matter as [DEV.to](https://dev.to) in case you want to cross post
 - The contact form is all setup and ready to use for Netlify forms
