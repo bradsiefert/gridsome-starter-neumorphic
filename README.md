@@ -6,6 +6,9 @@
 
 ![Gridsome Neumorphic Starter preview screenshot](https://i.imgur.com/AwSsAug.png)
 
+## Demo
+A demo of this site is available here: [https://gridsome-neumorphic-starter.netlify.app](https://gridsome-neumorphic-starter.netlify.app)
+
 ## Install
 ### 1. Install Gridsome CLI tool if you don't have
 `npm install --global @gridsome/cli`
