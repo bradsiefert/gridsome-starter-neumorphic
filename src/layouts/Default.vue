@@ -5,6 +5,8 @@
     </header>
 
     <main>
+      <SearchBar />
+        
       <transition name="fade" appear>
         <slot/>
       </transition>
@@ -24,11 +26,12 @@ query {
 </static-query>
 
 <script>
+import SearchBar from '@/components/SearchBar.vue'
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
 export default {
   components: {
-    Navbar, Footer
+    Navbar, Footer, SearchBar
   }
 }
 </script>
