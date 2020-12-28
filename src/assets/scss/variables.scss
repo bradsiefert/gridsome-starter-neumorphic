@@ -1,3 +1,33 @@
+// Custom Font Size CSS Classes (#notbootstrap)
+.font-size-1200 { font-size: 4rem !important; }      // 56px
+.font-size-1100 { font-size: 3rem !important; }      // 48px
+.font-size-1000 { font-size: 2.5rem !important; }    // 40px
+.font-size-900  { font-size: 2rem !important; }      // 32px
+.font-size-800  { font-size: 1.75rem !important; }   // 28px
+.font-size-700  { font-size: 1.5rem !important; }    // 24px
+.font-size-600  { font-size: 1.25rem !important; }   // 20px
+.font-size-500  { font-size: 1rem !important; }      // 16px
+.font-size-400  { font-size: 0.9375rem !important; } // 15px
+.font-size-300  { font-size: 0.875rem !important; }  // 14px
+.font-size-200  { font-size: 0.8125rem !important; } // 13px
+.font-size-100  { font-size: 0.75rem !important; }   // 12px
+.font-size-000  { font-size: 0.625rem !important; }  // 10px
+
+// Custom Font Size SCSS Variables (#notbootstrap)
+$font-size-1200: 4rem !default;      // 56px
+$font-size-1100: 3rem !default;      // 48px
+$font-size-1000: 2.5rem !default;    // 40px
+$font-size-900:  2rem !default;      // 32px
+$font-size-800:  1.75rem !default;   // 28px
+$font-size-700:  1.5rem !default;    // 24px
+$font-size-600:  1.25rem !default;   // 20px
+$font-size-500:  1rem !default;      // 16px
+$font-size-400:  0.9375rem !default; // 15px
+$font-size-300:  0.875rem !default;  // 14px
+$font-size-200:  0.8125rem !default; // 13px
+$font-size-100:  0.75rem !default;   // 12px
+$font-size-000:  0.625rem !default;  // 10px
+
 /* ---------- Bradstrap v4 Global Updates --------- */
 // 8pt Grid System
 $grid-gutter-width:     32px !default;

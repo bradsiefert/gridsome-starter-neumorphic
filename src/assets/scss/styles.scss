@@ -1,7 +1,7 @@
 // Importin'
 @import "variables.scss";
 @import "~bootstrap";
-// @import "darkmode.scss";
+@import "darkmode.scss";
 
 // All this is to make the footer sticky to the bottom.
 html, body, #app { height: 100%; }
