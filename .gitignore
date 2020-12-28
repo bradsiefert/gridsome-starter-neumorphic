@@ -1,3 +1,13 @@
 node_modules
 /.cache
 /dist
+/src/templates/.DS_Store
+/src/assets/images/.DS_Store
+/src/assets/.DS_Store
+/src/pages/.DS_Store
+/content/.DS_Store
+/static/.DS_Store
+/.DS_Store
+/src/.DS_Store
+/src/assets/scss/.DS_Store
+/content/images/.DS_Store
