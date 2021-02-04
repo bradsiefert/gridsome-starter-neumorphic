@@ -6,6 +6,14 @@ import DefaultLayout from '~/layouts/Default.vue'
 import FrontPage from '~/layouts/FrontPage.vue'
 import VueFuse from 'vue-fuse'
 
+// Adding FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
+import { faAdjust } from '@fortawesome/free-solid-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = true;
+library.add(faAdjust)
+
 export default function (Vue, { router, head, isClient }) {
   head.link.push({
     rel: 'stylesheet',
@@ -16,6 +24,7 @@ export default function (Vue, { router, head, isClient }) {
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+  
+  // Import FontAwesome
+  Vue.component('font-awesome', FontAwesomeIcon)
 }
-
-// 2020-08-04 Test Commit
