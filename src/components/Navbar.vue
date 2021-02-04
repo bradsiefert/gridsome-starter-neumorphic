@@ -43,7 +43,7 @@ export default {
 @import "@/assets/scss/variables.scss";
 
 // Navbar
-.navbar {
+.navbar, .search-bar .form-control, .search-bar-results {
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   box-shadow: 0 0 32px 0 rgba(0,0,0,0.08);

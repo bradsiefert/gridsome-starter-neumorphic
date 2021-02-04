@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <header>
       <Navbar />
     </header>
@@ -29,6 +29,7 @@ query {
 import SearchBar from '@/components/SearchBar.vue'
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
+
 export default {
   components: {
     Navbar, Footer, SearchBar
